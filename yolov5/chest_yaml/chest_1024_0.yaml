@@ -1,0 +1,12 @@
+train: /home/dunlap/kaggle/VinBigData_YOLO/chest_yolo/1024x1024/Fold0/images/train/
+val: /home/dunlap/kaggle/VinBigData_YOLO/chest_yolo/1024x1024/Fold0/images/val/
+
+# number of classes
+nc: 14
+
+# class names
+names: ['Aortic enlargement', 'Atelectasis', 'Calcification',
+       'Cardiomegaly', 'Consolidation', 'ILD', 'Infiltration',
+       'Lung Opacity', 'Nodule/Mass', 'Other lesion',
+       'Pleural effusion', 'Pleural thickening', 'Pneumothorax',
+       'Pulmonary fibrosis']

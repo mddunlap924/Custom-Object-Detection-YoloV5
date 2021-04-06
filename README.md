@@ -1,5 +1,4 @@
-# VinBigData_Yolo
-YoloV5 Model
+# VinBigData Chest X-Ray Abnormalities Detection - Yolov5
 
 This is code I developed for the Kaggle VinBigData Chest X-ray Abnormalities Detection competition (https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection).
 
@@ -12,14 +11,14 @@ The following steps can be used to help setup a Yolov5 Object Detection model us
     1. Create Data Folds for CV
         ◦ First put all images into a training and testing folder. The testing folder is for the images that are actually to be tested. For example, in this Kaggle competition it was the test images.
         ◦ It’s assumed that the images in the train and test folders all have the same height and widths (i.e., the following routines are setup to run square shaped images).
-        ◦ Run “data_prep_create_folds.py” – this will create the folds of data by taking all the images from the train folder and separating those into the different folds. Each fold will have its own folder and inside that folder will be a train and validation (val) folder. These folder will be called by the yolo model during training
+        ◦ Run “data_prep_create_folds.py” – this will create the folds of data by taking all the images from the train folder and separating those into the different folds. Each fold will have its own folder and inside that folder will be a train and validation (val) folder. These folder will be called by the yolo model during training.
           
     2. Setup Yolov5 Models
         ◦ Navigate to ./yolov5 folder
         ◦ In folder “chest_yaml” modify the chest_1024_*.yaml files for your dataset which will consist of specifying the path to the train, val folders (see step 1), number of classes, and class names.
             ▪ Create a chest_*.yaml file for each fold from step 1
         ◦ Data augmentations are controlled with the hyp.scratch.yaml file under the “data” folder
-            ▪ Spend time adjusting the parameters within this file because they will affect your results and you could sometime here
+            ▪ Spend time adjusting the parameters within this file because they will affect your results and you could spend sometime here
         ◦ Run “yolov5_execute_shell.py” to begin training models
             ▪ Update directory paths as needed to run your own applications
           

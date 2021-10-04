@@ -1,6 +1,6 @@
 # VinBigData Chest X-Ray Abnormalities Detection - Yolov5
 
-This is code I developed for the Kaggle VinBigData Chest X-ray Abnormalities Detection competition (https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection).
+This is code I developed for the [Kaggle VinBigData Chest X-ray Abnormalities Detection competition](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection).
 
 The useful part of this code is that it will train Yolov5 models on multiple folds of data. This typically can take hours to days depending on several factors; therefore, once this is running you can periodically check-in on your models using Tensorboards or Weights and Biases. This is useful because you can work on other tasks while this is running. I was able to train a YoloV5 – medium P6 model, in conjunction with a 2 stage classifier, that was able to score in the top 5% of the Kaggle competition.
 
